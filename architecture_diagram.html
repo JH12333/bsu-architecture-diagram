@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BSU Architecture: AI-Assisted USB Behavior Analysis</title>
+  <link rel="stylesheet" href="styles.css?v=20260526-tech-unified4">
+  <script src="architecture_diagram.js?v=20260526-tech-unified4" defer></script>
+</head>
+<body>
+  <main class="page">
+    <section class="diagram-frame" id="diagramFrame" aria-label="BSU architecture node diagram">
+      <svg class="frame-tech-link-layer" id="frameTechLinkLayer" aria-hidden="true"></svg>
+      <div class="diagram-viewport" id="diagramViewport">
+        <div class="diagram-stage" id="diagramStage">
+          <div class="group-layer" id="groupLayer" aria-hidden="true"></div>
+          <svg class="connection-layer" id="connectionLayer" aria-hidden="true"></svg>
+          <div class="nodes-layer" id="nodesLayer"></div>
+          <div class="active-nodes-layer" id="activeNodesLayer"></div>
+          <svg class="label-layer" id="labelLayer" aria-hidden="true"></svg>
+        </div>
+      </div>
+
+      <section class="technology-strip" aria-label="Technologies Used">
+        <h2>Technologies Used</h2>
+        <ul>
+          <li><button class="tech-chip" type="button" data-tech="linux">Linux</button></li>
+          <li><button class="tech-chip" type="button" data-tech="usbmon">usbmon</button></li>
+          <li><button class="tech-chip" type="button" data-tech="pcapng">pcap-ng</button></li>
+          <li><button class="tech-chip" type="button" data-tech="urbs">USB Request Blocks / URBs</button></li>
+          <li><button class="tech-chip" type="button" data-tech="tshark">tshark</button></li>
+          <li><button class="tech-chip" type="button" data-tech="mcp">MCP / Model Context Protocol</button></li>
+          <li><button class="tech-chip" type="button" data-tech="fastmcp">FastMCP stdio server</button></li>
+          <li><button class="tech-chip" type="button" data-tech="claude">AI coding assistant / Claude</button></li>
+          <li><button class="tech-chip" type="button" data-tech="python">Python 3.11+ runtime</button></li>
+          <li><button class="tech-chip" type="button" data-tech="cli">bsu-tool CLI entrypoint</button></li>
+          <li><button class="tech-chip" type="button" data-tech="sdks">mcp Python SDK</button></li>
+          <li><button class="tech-chip" type="button" data-tech="dataclasses">Python dataclasses / typed models</button></li>
+          <li><button class="tech-chip" type="button" data-tech="quality">pytest / pyright / ruff</button></li>
+          <li><button class="tech-chip" type="button" data-tech="structured">Structured MCP tool results</button></li>
+        </ul>
+      </section>
+
+      <div class="sr-only" id="statusText" aria-live="polite">
+        BSU turns Linux usbmon and tshark pcap-ng captures into decoded capture sessions that humans and AI assistants can analyze together.
+      </div>
+    </section>
+  </main>
+</body>
+</html>
